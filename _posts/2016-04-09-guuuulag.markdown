@@ -2,6 +2,8 @@
 published: true
 title: guuuulag
 layout: post
+tags: [java, topa, puttane]
+categories: [troie]
 ---
 yo yo prepaid wwcard!
 
