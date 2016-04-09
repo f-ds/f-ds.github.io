@@ -2,6 +2,8 @@
 published: true
 title: uuuuuuust 
 layout: post
+tags: [uppio, java, topa]
+categories: [topa, cazzo]
 ---
 yo yo prepaid card!
 
