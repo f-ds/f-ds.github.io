@@ -2,3 +2,9 @@
   font-size:60%;
   line-height: 1.5;
 }
+
+hr .line-dashed-fat{
+    border: 0;
+    border-bottom: 3px dashed #ccc;
+    background: #999;
+}
