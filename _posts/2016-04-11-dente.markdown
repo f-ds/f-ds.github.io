@@ -1,0 +1,12 @@
+---
+published: true
+title: dente
+layout: post
+---
+fa male il dente bao
+
+
+
+    public static void main(){
+        String a = "nerfre";
+    }
