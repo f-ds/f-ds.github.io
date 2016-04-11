@@ -3,6 +3,6 @@ pygments: true
 markdown: kramdown
 url: http://f-ds.github.io
 title: f-ds
-tagline: A log of everyday life
-description: My awesome new site
+tagline: fds dev blog
+description: Everyday GIS stuff and Backend programming for food
 paginate: 5
