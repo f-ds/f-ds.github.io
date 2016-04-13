@@ -35,10 +35,13 @@ The steps needed are:
 ## 3) Build gdal with python ECW and MrSID
 
 It's Important to run this before anything else
+
 ~~~~~~~~~~~~~~~
 #$ sudo apt-get install python-numpy python-scipy 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
 then 
+
 ~~~~~~~~~~~~~~~
 #$ sudo apt-get install build-essential python-all-dev
 #$ cd /tmp
@@ -46,24 +49,27 @@ then
 #$ tar xvfz gdal-1.9.1.tar.gz
 #$ cd gdal-1.9.1
 ~~~~~~~~~~~~~~~~~~~~~~~~
+
 The usage of a different prefix can causes issues when building with python
-~~~~~~~~~~~~~~~~~~~
+
+~~~~~~~~~~~~~
 #$ ./configure --with-python --with-ecw=/usr/local --with-mrsid=/usr/local/share/mrsid_rasterDSDK 
 #$ make
 #$ sudo make install
 #$ sudo ldconfig (configure properly the LD_LIBRARY_PATH)
 ~~~~~~~~~~~~~~~~~~~
 
-The configure step could need also for the params
-~~~~~~~~~~~~~~~~~~~
---with-jp2mrsid --libdir=/usr/local/share/mrsid_rasterDSDK/lib
- ~~~~~~~~~~~~~~~~~~~~~~~~
+Add also the params
 
-in order to support jpeg2000 throught MrSID drivers and to proper complile. Seems that it is required on a 32bit OS
+~~~~~~~~~
+--with-jp2mrsid --libdir=/usr/local/share/mrsid_rasterDSDK/lib
+~~~~~~~~~~~~
+
+to the configure step in order to support jpeg2000 throught MrSID drivers and to proper complile. Seems that it is required on a 32bit OS
 
 ## 4) Check for the supported formats
 
-~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~
 #$ gdalinfo --formats | wc -l 
    102
 #$ gdalinfo --formats | grep SID
