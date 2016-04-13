@@ -28,7 +28,7 @@ The steps needed are:
 
 ## 2) Download and configure mrsid
 
-1. Download rasterDSDK from https://www.lizardtech.com/developer (need for registration). Pay attention to download the proper 32bit or 64 bit version and use the closer gcc distribution to your gcc installer. Although the package are commented with "Supports RHEL" they work also debian.
+1. Download rasterDSDK from **https://www.lizardtech.com/developer** (need for registration). Pay attention to download the proper 32bit or 64 bit version and use the closer gcc distribution to your gcc installer. Although the package are commented with **Supports RHEL** they work also debian.
 
 1. Extract the archive in /usr/local/share/ and rename the root directory if the extracted archive mrsid_rasterDSDK. Of course you can extract it where you want and call the root directory as you prefer but we will use this path later so pay attention if you want to place the DSDK somewhere else
 
