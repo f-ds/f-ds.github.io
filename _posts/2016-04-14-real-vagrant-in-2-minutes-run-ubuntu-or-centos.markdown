@@ -7,7 +7,7 @@ Hi this post is about Vagrant.
 
 Do you ever need for a fresh installation of your favourite Operating System for testing? Here we are going to talk about a tool, called **Vagrant**, which help us doing this on the fly.
 
-###The basics: what and why Vagrant
+### The basics: what and why Vagrant
 
 Do you know what Vagrant is? Awesome. 
 Don't you know it? It's just a ruby file to store some settings to start locally a fresh virtual machine. It works by default with VirtualBox but it can be easilly configured with many other virtualizzation system.
@@ -16,7 +16,7 @@ I usually prefer VMware Player instead of VirtualBox but vagrant works great wit
 
 At first glance Vagrant seems offer not much more than simply run a live CD of the OS but it's not true: other than a great integration with the most common virtualizzation softwares it's works very well also with provisioning tools like Vagrant, Chef and pupped or simply bash scripting.
 
-###It's time to install some stuff
+### It's time to install some stuff
 
 Other than **git** we need some stuff working on our laptop:
 As we said Vagrant works by default with **Virtual Box**, so let's install it. 
@@ -33,7 +33,7 @@ Now clone this repo:
 
 this repo it's not so fancy: just a basic Vagrantfile, which is the main (and only) vagrant configuration file.
 
-###First vagrant run
+### First vagrant run
 
 Now you have everything you need and you are ready to run your first fresh VirtualMachine with Vagrant: no need for open the VM player, search for the proper ISO to install and waste time installing it...
 
@@ -60,8 +60,60 @@ vagrant
 
 without neither taking care of the login user credentials, of course they are configured in the Vagrantfile. 
 
-Let's say that the user credentials are bagrant/vagrant, we can connect to the VM also with 
+Let's say that the user credentials are vagrant/vagrant, we can connect to the VM also with 
+
+*You could have need for remove existing 192.169.66.6 entries  in the known_hosts file*
 
 ~~~~~~~~~~~~~~~~
 #/home/fds/work/code$ ssh vagrant@192.168.66.6
+The authenticity of host '192.168.66.6 (192.168.66.6)' can't be established.
+ECDSA key fingerprint is SHA256:6EeTmdZlwTjWUzwmGq4l2slFHCab+TVmlVhvM08ERq4.
+Are you sure you want to continue connecting (yes/no)? yes
+Warning: Permanently added '192.168.66.6' (ECDSA) to the list of known hosts.
+vagrant@192.168.66.6's password:
+Last login: Thu Apr 14 23:03:59 2016 from 10.0.2.2
+[vagrant@localhost ~]$
 ~~~~~~~~~~~~~~~~~~~~~~~~
+
+In this way it's possible to connect to the VM also from another host in the same local network.
+
+Again: that weird IP is configured in the Vagrantfile. 
+
+You can login/logout as many time you want, the VM will remains up and running untill we execute:
+
+~~~~~~~~~~~~~~
+#/home/fds/work/code$ vagrant halt
+==> default: Attempting graceful shutdown of VM...
+~~~~~~~~~~~~~~~~~~~
+
+The VM will shutdown but all our changes will be saved and ready for the next `vagrant up` 
+
+In order to destroy a VM and so reset its state
+
+~~~~~~~~~~~~~~
+#/home/fds/work/code$ vagrant destroy
+     default: Are you sure you want to destroy the 'default' VM? [y/N]
+
+~~~~~~~~~~~~~~~~~~~
+
+
+### Inside the Vagrant file
+
+Here is all the content of the vagrantfile:
+
+~~~~~~~~~~~~~~~~~ Ruby
+# -*- mode: ruby -*-
+# vi: set ft=ruby :
+
+Vagrant.configure(2) do |config|
+  config.vm.box = "dhoppe/ubuntu-12.04.5-amd64"
+  #config.vm.box = "geerlingguy/centos7"
+    config.ssh.password = "vagrant"
+    config.ssh.insert_key = true
+    config.vm.network "private_network", ip: "192.168.66.6"
+end
+~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Comment the **config.vm.box** setting you don't like and change the **config.ssh.password** and **ip** if you want. 
+
+That's All!
