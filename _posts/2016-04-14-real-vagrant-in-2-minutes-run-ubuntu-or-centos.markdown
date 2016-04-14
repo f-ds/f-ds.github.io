@@ -1,6 +1,6 @@
 ---
 published: true
-title: real Vagrant in 2 minutes - run Ubuntu or CentOS
+title: wwww
 layout: post
 ---
 Hi this post is about Vagrant. 
