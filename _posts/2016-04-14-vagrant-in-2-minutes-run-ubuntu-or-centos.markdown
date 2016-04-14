@@ -1,6 +1,6 @@
 ---
-published: false
-title: Vagrant in 2 minutes - run Ubuntu or CentOS 
+published: true
+title: Vagrant in 2 minutes - run fresh Ubuntu or CentOS
 layout: post
 ---
 Hi this post is about Vagrant. 
