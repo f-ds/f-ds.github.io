@@ -1,6 +1,6 @@
 ---
 published: true
-title: wwww
+title: Run Ubuntu or CentOS with Vagrant
 layout: post
 ---
 Hi this post is about Vagrant. 
