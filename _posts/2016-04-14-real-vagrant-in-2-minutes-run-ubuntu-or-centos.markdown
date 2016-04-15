@@ -2,6 +2,8 @@
 published: true
 title: Run any Linux distro with Vagrant
 layout: post
+tags: [Vagrant, Linux, virtualization, devops, ]
+categories: [devops]
 ---
 Hi this post is about Vagrant. 
 
