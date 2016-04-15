@@ -19,18 +19,21 @@ I usually prefer **VMware Player** instead of VirtualBox but vagrant works great
 
 At first glance Vagrant doesn't look much more than running a live CD of an OS but it's not true
 
-* As we already said it has a great integration with the most common virtualizzation softwares
-* it's works great with provisioning tools like Vagrant, Chef and pupped or simply bash scripting. We can run the fresh OS and execute your latest DevOps stuff just one-shot running a single basic comand.
-* The vagrant operating system distro compatible with vagrant are called *boxes* and there is a sort of (free) [official market](https://atlas.hashicorp.com/boxes/search) mantained by HashiCorp. Select your favourite updated distro, copy its name in the Vagrantfile and you got it.
+* As we already said it has a great **integration** with the most common **virtualizzation softwares**
+* it **works** great with **provisioning tools** like Vagrant, Chef and pupped or simply bash scripting. We can run the fresh OS and execute your latest DevOps stuff just one-shot running a single basic comand.
+* The vagrant OS distro compatible with vagrant are called **boxes** and there is a sort of (free) [official market](https://atlas.hashicorp.com/boxes/search) mantained by HashiCorp. Select your favourite updated distro, copy its name in the Vagrantfile and you got it.
+
+> No you can't use the official distribution as **.iso file**
 
 ### It's time to install some stuff
 
 Other than **git** we need some stuff working on our laptop:
 As we said Vagrant works by default with **Virtual Box**, so let's install it. 
-
-[Pick the Virtual Box installer for your host OS](https://www.virtualbox.org/wiki/Download_Old_Builds_5_0)
+Pick the Virtual Box installer for your host OS from the [hashicorp website](https://www.virtualbox.org/wiki/Download_Old_Builds_5_0)
  
-> It's the download link for the 5.0.x which is the one I have installed at the time of writing... but I bet everything works also with a future VBox release*
+> It's the download link for the 5.0.x serie
+
+>I bet everything works also with a future VBox release*
 
 And Vagrant also requires itself of course so [download](https://www.vagrantup.com/downloads.html) it and install the latest release now!
 
