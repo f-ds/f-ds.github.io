@@ -33,7 +33,7 @@ Pick the Virtual Box installer for your host OS from the [VBox website](https://
  
 > It's the download link for the 5.0.x serie
 
->I bet everything works also with a future VBox release*
+>I bet everything works also with a future VBox release
 
 And Vagrant also requires itself of course so [download](https://www.vagrantup.com/downloads.html) it and install the latest release!
 
