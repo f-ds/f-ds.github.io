@@ -74,7 +74,8 @@ vagrant
 
 without neither taking care of the login user credentials, of course they are configured in the Vagrantfile. 
 
-Let's say that the user credentials are vagrant/vagrant, we can connect to the VM also via ssh
+Let's say that the user credentials are *vagrant* / *vagrant*, we can connect to the VM also via ssh
+
 ~~~~~~~~~~~~~~~~
 #/home/fds/work/code$ ssh vagrant@192.168.66.6
 The authenticity of host '192.168.66.6 (192.168.66.6)' can't be established.
