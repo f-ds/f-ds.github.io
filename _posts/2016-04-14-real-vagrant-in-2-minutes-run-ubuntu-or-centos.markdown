@@ -15,7 +15,7 @@ Awesome. jump to the next section and start to put your hands on it.
 Don't you know it? 
 It's just a ruby file, called **Vagrantfile**, which stores some settings to start locally a fresh virtual machine. It works by default with **VirtualBox** but it can be easilly configured with many other virtualizzation software.
 
-I usually prefer **VMware Player** instead of VirtualBox but vagrant works great with the latter so I suggest to install VirtualBox and postpone the step of a custom hypervisor just in case of need.
+I usually prefer **VMware Player** instead of VirtualBox but vagrant works great with the latter so I suggest to install VirtualBox and postpone the configuration of a custom hypervisor just in case of need.
 
 At first glance Vagrant doesn't look much more than running a live CD of an OS but it's not true
 
