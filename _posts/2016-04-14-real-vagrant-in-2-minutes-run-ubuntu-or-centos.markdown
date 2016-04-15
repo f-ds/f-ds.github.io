@@ -1,23 +1,23 @@
 ---
 published: true
-title: Run Ubuntu or CentOS with Vagrant
+title: Run any Linux distro with Vagrant
 layout: post
 ---
 Hi this post is about Vagrant. 
 
-Do you ever need for a fresh installation of your favourite Operating System for testing? Here we are going to talk about a tool, called **Vagrant**, which help us doing this on the fly.
+Do you ever need for a fresh installation of your favourite Operating System for testing or prototyping pourposes? Here we are going to talk about a tool, called **Vagrant**, which help us doing the OS setup on the fly having as host machine Linux, Win or MacOS
 
 ### The basics: what and why Vagrant
 
 Do you know what Vagrant is? 
-Awesome.
+Awesome. jump to the next section and start to put your hands on it.
 
 Don't you know it? 
-It's just a ruby file called *Vagrantfile* which stores some settings to start locally a fresh virtual machine. It works by default with VirtualBox but it can be easilly configured with many other virtualizzation system.
+It's just a ruby file, called **Vagrantfile**, which stores some settings to start locally a fresh virtual machine. It works by default with **VirtualBox** but it can be easilly configured with many other virtualizzation software.
 
-I usually prefer **VMware Player** instead of **VirtualBox** but vagrant works great with the latter so I suggest to install VirtualBox in case you don't have already installed it and forgot this configuration for the moment.
+I usually prefer **VMware Player** instead of VirtualBox but vagrant works great with the latter so I suggest to install VirtualBox in case you don't have already installed it and postpone the step of a custom hypervisor just in case of need.
 
-At first glance Vagrant doesn't look much more than to run a live CD of an OS but it's not true
+At first glance Vagrant doesn't look much more than running a live CD of an OS but it's not true
 
 * As we already said it has a great integration with the most common virtualizzation softwares
 * it's works great with provisioning tools like Vagrant, Chef and pupped or simply bash scripting. We can run the fresh OS and execute your latest DevOps stuff just one-shot running a single basic comand.
