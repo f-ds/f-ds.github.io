@@ -28,13 +28,13 @@ At first glance Vagrant doesn't look much more than to run a live CD of an OS bu
 Other than **git** we need some stuff working on our laptop:
 As we said Vagrant works by default with **Virtual Box**, so let's install it. 
 
-[Pick the one compatible with your host OS](https://www.virtualbox.org/wiki/Download_Old_Builds_5_0)
+[Pick the Virtual Box installer for your host OS](https://www.virtualbox.org/wiki/Download_Old_Builds_5_0)
  
 > It's the download link for the 5.0.x which is the one I have installed at the time of writing... but I bet everything works also with a future VBox release*
 
-And Vagrant also requires vagrant of course [download](https://www.vagrantup.com/downloads.html) and install latest release now!
+And Vagrant also requires itself of course so [download](https://www.vagrantup.com/downloads.html) it and install the latest release now!
 
-Now clone this repo:
+Now clone this repo from my GitHub account:
 
 ~~~~~~~~~~~~~~~~
 #$ git clone git@github.com:Damianofds/vagrant-fresh-os.git
