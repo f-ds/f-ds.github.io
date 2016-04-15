@@ -28,7 +28,7 @@ At first glance Vagrant doesn't look much more than running a live CD of an OS b
 ### It's time to install some stuff
 
 Other than **git** we need some stuff working on our laptop:
-As we said Vagrant works by default with **Virtual Box**, so let's install it. 
+ss we said Vagrant works by default with **Virtual Box**, so let's install it. 
 Pick the Virtual Box installer for your host OS from the [hashicorp website](https://www.virtualbox.org/wiki/Download_Old_Builds_5_0)
  
 > It's the download link for the 5.0.x serie
@@ -43,7 +43,7 @@ Now clone this repo from my GitHub account:
 #$ git clone git@github.com:Damianofds/vagrant-fresh-os.git
 ~~~~~~~~~~~~~~~~~~~~~~~~
 
-this repo it's not so fancy: just a basic Vagrantfile, which is the main (and only) vagrant configuration file.
+this repo it's not so fancy: there's just a basic Vagrantfile, which is the main (and only) vagrant configuration file.
 
 ### First vagrant run
 
@@ -57,11 +57,13 @@ just go to the root of the previously cloned repo and run:
 
 That's it.
 
-Of course to run a fresh OS installation we need its ISO file. If it is the first time we run this VM Vagrant has to download it. From where? it's configured with a property in the Vagrantfile and we are going to have a look to it soon, but now let's continue to play with the just launched VM.
+Of course to run a fresh OS installation **we need its image**.. 
 
-you can log in in 2 different way:
+If it is the first time we run this VM Vagrant has to download the image from the hasicorp repositories and it would require few minutes, depending on your available bandwidth.
 
-Simply with
+But let's continue to play with the VM we've launched: you can log in on it in 2 different ways:
+
+Simply typing *vagrant ssh*
 
 ~~~~~~~~~~~~~~~~
 #/home/fds/work/code$ vagrant ssh
@@ -72,9 +74,7 @@ vagrant
 
 without neither taking care of the login user credentials, of course they are configured in the Vagrantfile. 
 
-Let's say that the user credentials are vagrant/vagrant, we can connect to the VM also with 
-
-
+Let's say that the user credentials are vagrant/vagrant, we can connect to the VM also via ssh
 ~~~~~~~~~~~~~~~~
 #/home/fds/work/code$ ssh vagrant@192.168.66.6
 The authenticity of host '192.168.66.6 (192.168.66.6)' can't be established.
@@ -90,18 +90,18 @@ Last login: Thu Apr 14 23:03:59 2016 from 10.0.2.2
 
 In this way it's possible to connect to the VM also from another host in the same local network.
 
-Again: that weird IP is configured in the Vagrantfile. 
+Again: this weird IP address is configured in the Vagrantfile, you can set whatever valid address you want
 
-You can login/logout as many time you want, the VM will remains up and running untill we execute:
+You can login/logout as many time you want, the VM will remains up and running untill we execute *vagrant halt*
 
 ~~~~~~~~~~~~~~
 #/home/fds/work/code$ vagrant halt
 ==> default: Attempting graceful shutdown of VM...
 ~~~~~~~~~~~~~~~~~~~
 
-The VM will shutdown but all our changes will be saved and ready for the next `vagrant up` 
+The VM will shutdown but all our changes will be saved and ready for the next `vagrant up`.
 
-In order to destroy a VM and so reset its state
+In order to destroy a VM and so delete its state
 
 ~~~~~~~~~~~~~~
 #/home/fds/work/code$ vagrant destroy
@@ -127,6 +127,9 @@ Vagrant.configure(2) do |config|
 end
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Comment the **config.vm.box** setting you don't like and change the **config.ssh.password** and **ip** if you want. 
+* Comment the **config.vm.box** setting you don't wanna run or add another one from the [hashicorp website](https://www.virtualbox.org/wiki/Download_Old_Builds_5_0)
+* Change the **config.ssh.password** and **ip** if you want. 
+* Read from the [Vagrant official doc](https://www.vagrantup.com/docs/vagrantfile/) the specifications of the vagrant file.
 
-That's All!
+
+That's All, enjoy vagrant! 
