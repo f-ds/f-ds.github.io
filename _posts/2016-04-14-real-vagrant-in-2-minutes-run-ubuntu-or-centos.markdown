@@ -111,7 +111,7 @@ In order to destroy a VM and so reset its state
 
 Here is all the content of the vagrantfile:
 
-~~~~~~~~~~~~~~~~~ Ruby
+~~~~~~~~~~~~~~~~~ruby
 # -*- mode: ruby -*-
 # vi: set ft=ruby :
 
