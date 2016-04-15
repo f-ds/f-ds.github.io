@@ -9,12 +9,19 @@ Do you ever need for a fresh installation of your favourite Operating System for
 
 ### The basics: what and why Vagrant
 
-Do you know what Vagrant is? Awesome. 
-Don't you know it? It's just a ruby file to store some settings to start locally a fresh virtual machine. It works by default with VirtualBox but it can be easilly configured with many other virtualizzation system.
+Do you know what Vagrant is? 
+Awesome.
 
-I usually prefer VMware Player instead of VirtualBox but vagrant works great with the latter so in my opinion worth the installation of VirtualBox if you don't have already installed it.
+Don't you know it? 
+It's just a ruby file called *Vagrantfile* which stores some settings to start locally a fresh virtual machine. It works by default with VirtualBox but it can be easilly configured with many other virtualizzation system.
 
-At first glance Vagrant seems offer not much more than simply run a live CD of the OS but it's not true: other than a great integration with the most common virtualizzation softwares it's works very well also with provisioning tools like Vagrant, Chef and pupped or simply bash scripting.
+I usually prefer **VMware Player** instead of **VirtualBox** but vagrant works great with the latter so I suggest to install VirtualBox in case you don't have already installed it and forgot this configuration for the moment.
+
+At first glance Vagrant doesn't look much more than to run a live CD of an OS but it's not true
+
+* As we already said it has a great integration with the most common virtualizzation softwares
+* it's works great with provisioning tools like Vagrant, Chef and pupped or simply bash scripting. We can run the fresh OS and execute your latest DevOps stuff just one-shot running a single basic comand.
+* The vagrant operating system distro compatible with vagrant are called *boxes* and there is a sort of (free) [official market](https://atlas.hashicorp.com/boxes/search) mantained by HashiCorp. Select your favourite updated distro, copy its name in the Vagrantfile and you got it.
 
 ### It's time to install some stuff
 
@@ -23,7 +30,9 @@ As we said Vagrant works by default with **Virtual Box**, so let's install it.
 
 [Pick the one compatible with your host OS](https://www.virtualbox.org/wiki/Download_Old_Builds_5_0)
  
-*It's the download link for the 5.0.x which is the one I have installed at the time of writing... but I bet everything works also with a future VBox release*
+> It's the download link for the 5.0.x which is the one I have installed at the time of writing... but I bet everything works also with a future VBox release*
+
+And Vagrant also requires vagrant of course [download](https://www.vagrantup.com/downloads.html) and install latest release now!
 
 Now clone this repo:
 
@@ -62,7 +71,6 @@ without neither taking care of the login user credentials, of course they are co
 
 Let's say that the user credentials are vagrant/vagrant, we can connect to the VM also with 
 
-*You could have need for remove existing 192.169.66.6 entries  in the known_hosts file*
 
 ~~~~~~~~~~~~~~~~
 #/home/fds/work/code$ ssh vagrant@192.168.66.6
@@ -74,6 +82,8 @@ vagrant@192.168.66.6's password:
 Last login: Thu Apr 14 23:03:59 2016 from 10.0.2.2
 [vagrant@localhost ~]$
 ~~~~~~~~~~~~~~~~~~~~~~~~
+
+> You could have need for remove existing 192.169.66.6 entries  in the known_hosts file
 
 In this way it's possible to connect to the VM also from another host in the same local network.
 
