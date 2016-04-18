@@ -3,7 +3,7 @@ published: true
 title: Raster algebra with GDAL (and no QGIS)
 layout: post
 ---
-##The problem
+## The problem
 
 I recently tried to use the **QGIS** 2.14.1 raster calculator to do some very basic operations on a forest loss map. 
 
@@ -30,7 +30,7 @@ In the last QGIS release we get suddenly a clear message: I don't have enough me
 
 This behaviour seems to be confirmed by this [QGIS Feature Request](https://hub.qgis.org/issues/13336) and its related discussion below.
 
-##The solution
+## The solution
 
 So what can I do if I don't want wait for the implementation of this new feature request? The QGIS community is amazing but I need that work done ASAP and I can't wait for the developments nor contribute to QGIS atm.
 
@@ -41,14 +41,22 @@ In particular the command `gdal_calc.py` is used to perform raster algebra, [hav
 In the next sections we are going step-by-step to create a GDAL build with pyton bindings building it from the sources. It is much more simple thatn it seems and there's no need of actual experience in C programming, just to follow some basic steps with the **make** utility.
 Learn how to build GDAL could be very usefull for a GIS technician seems somethimes it's needed in order to use its brand new features or advanced configurations which are (still) not supported by QGIS.
 
-##Prerequisites
+## Prerequisites
 
 * A background about GIS and raster Algebra is needed (otherwise probably you aren't interested in this blogpost)
 * For the hands-on section of this blogpost you have to be familiar with [Vagrant and desktop virtualization](http://f-ds.github.io/devops/2016/04/14/real-vagrant-in-2-minutes-run-ubuntu-or-centos.html) or have a working installation of the GDAL library with python bindings.
 
-##Let's make our hands dirty
+## Let's make our hands dirty
 
-###Create the environment
+### Create the environment
 The first thing to do is running a fresh installation of a Ubuntu distro, let's say Ubuntu precise. In my village we say: "old chicken makes a tasty broth". We can use also a non-fresh installation of course but... Why waste time with broken dependencies and other system missconfiguration when we have amazing tools like **Vagrant** and **VirtualBox**?
 
 Follow this 2 minutes tutorial [Vagrant and desktop virtualization](http://f-ds.github.io/devops/2016/04/14/real-vagrant-in-2-minutes-run-ubuntu-or-centos.html) and come back here when your Ubuntu is up and running
+
+### Build GDAL with pyton bindings
+
+TODO
+
+### Run the processing with gdal_calc.py
+
+TODO
