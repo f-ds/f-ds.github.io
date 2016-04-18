@@ -47,7 +47,9 @@ Do you have `gdal_calc.py` already working on your machine? jump directly to **R
 ## Let's make our hands dirty
 
 ### Create the environment
-The first thing to do is running a fresh installation of a Ubuntu distro, let's say Ubuntu precise. In my village we say: "old chicken makes a tasty broth". We can use also a non-fresh installation of course but... Why waste time with broken dependencies and other system missconfiguration when we have amazing tools like **Vagrant** and **VirtualBox**?
+The first thing to do is running a fresh installation of a Ubuntu distro, let's say Ubuntu precise. In my village we say: "old chickens make a tasty broth". 
+
+We can use also a non-fresh installation of course but... Why wasting time with broken dependencies and other system missconfiguration when we have amazing tools like **Vagrant** and **VirtualBox**?
 
 Follow this 2 minutes tutorial [Vagrant and desktop virtualization](http://f-ds.github.io/devops/2016/04/14/real-vagrant-in-2-minutes-run-ubuntu-or-centos.html) and come back here when your Ubuntu is up and running.
 
