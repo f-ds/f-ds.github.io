@@ -1,6 +1,6 @@
 ---
 published: true
-title: draft - raster algebra with GDAL (and no QGIS)
+title: tmp - raster algebra with GDAL (and no QGIS)
 layout: post
 ---
 I recently tried to use the **QGIS** 2.14.1 raster calculator to do some very basic operations on a forest loss map. 
