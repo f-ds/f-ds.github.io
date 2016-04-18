@@ -13,6 +13,8 @@ My task was simple: create a single raster representing the forest loss status f
 
 I opened QGIS soon and I used its **Raster calucator** functionality
 
+![The QGis Raster Calculator GUI](https://rawgit.com/f-ds/f-ds.github.io/master/public/img/raster-calculator.jpg)
+{: height="36px" width="36px"}
 
 `("italy_loss_2000-2014_retiled_lzw@1" ==9)*9+("italy_loss_2000-2014_retiled_lzw@1"!=9)*0`
 
