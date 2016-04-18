@@ -5,7 +5,7 @@ layout: post
 ---
 I recently tried to use the **QGIS** 2.14.1 raster calculator to do some very basic operations on a forest loss map. 
 
-The raster have a `~47000x46000` resolution with a `Byte` pixel type. The file size of the uncompressed **GeoTiff** version was about `2GB`.
+The raster has a `~47000x46000` resolution with a `Byte` pixel type. The file size of the uncompressed **GeoTiff** version was about `2GB`.
 
 Since my forest loss map represents the areas where forest has been lost in each year between 2001 and 2014 each "valorized" pixel contains an integer number p with `1 <= p <= 15` indicating when the loss happened.
 
