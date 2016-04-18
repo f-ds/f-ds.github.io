@@ -44,16 +44,14 @@ Learn how to build GDAL could be very usefull for a GIS technician seems somethi
 
 Do you have `gdal_calc.py` already working on your machine? jump directly to **Run the processing with gdal_calc.py**
 
-## Let's make our hands dirty
-
-### Create the environment
+## Create the environment
 The first thing to do is running a fresh installation of a Ubuntu distro, let's say Ubuntu precise. In my village we say: "old chickens make a tasty broth". 
 
 We can use also a non-fresh installation of course but... Why wasting time with broken dependencies and other system missconfiguration when we have amazing tools like **Vagrant** and **VirtualBox**?
 
 Follow this 2 minutes tutorial [Vagrant and desktop virtualization](http://f-ds.github.io/devops/2016/04/14/real-vagrant-in-2-minutes-run-ubuntu-or-centos.html) and come back here when your Ubuntu is up and running.
 
-### Build GDAL with pyton bindings
+## Build GDAL with pyton bindings
 
 First of all install the **numpy** and **scipy** python libraries, these are used by the python gdal utilities to perform mathematics operations
 
@@ -115,7 +113,7 @@ after make command has finished run
 
 and then cross your fingers and type `gdal_calc.py` on your command line. If you get the command help menu you can start with the actual raster processing. If you receive a bash or python error... Bad for you, it's time to fix something!
 
-### Run the processing with gdal_calc.py
+## Run the processing with gdal_calc.py
 
 ok so now upload on your VM your raster dataset, in my case the aggregated forest loss map, and perform the same computation we tried to run with QGIS: we want to create a new raster only with pixel value equals to 9 .
 
