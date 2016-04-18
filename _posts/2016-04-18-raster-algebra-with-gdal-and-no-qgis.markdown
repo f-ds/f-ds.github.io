@@ -36,15 +36,11 @@ So what can I do if I don't want wait for the implementation of this new feature
 
 QGIS use behind the scenes the **GDAL** library to perform its processing.
 
-In particular the command `gdal_calc.py` is used to perform raster algebra, [have a look to its documentation](http://www.gdal.org/gdal_calc.html). As you can easilly see the command finish with **.py** so we need a GDAL installation **with python bindings** which is a set of higher level utilities written in python which use the core libraries written in C like **gdal_translate**, **gdalwarp** ecc..
+The GDAL utility `gdal_calc.py` is used to perform raster algebra operations, [have a look to its documentation](http://www.gdal.org/gdal_calc.html). As you can easilly see the command ends with the extension  **.py** so we need a GDAL installation **with python bindings** which is a set of higher level utilities written in python which use the core libraries written in C like **gdal_translate**, **gdalwarp** ecc..
 
 In the next sections we are going step-by-step to create a GDAL build with pyton bindings building it from the sources. It is much more simple thatn it seems and there's no need of actual experience in C programming, just to follow some basic steps with the **make** utility.
+
 Learn how to build GDAL could be very usefull for a GIS technician seems somethimes it's needed in order to use its brand new features or advanced configurations which are (still) not supported by QGIS.
-
-## Prerequisites
-
-* A background about GIS and raster Algebra is needed (otherwise probably you aren't interested in this blogpost)
-* For the hands-on section of this blogpost you have to be familiar with [Vagrant and desktop virtualization](http://f-ds.github.io/devops/2016/04/14/real-vagrant-in-2-minutes-run-ubuntu-or-centos.html) or have a working installation of the GDAL library with python bindings.
 
 ## Let's make our hands dirty
 
