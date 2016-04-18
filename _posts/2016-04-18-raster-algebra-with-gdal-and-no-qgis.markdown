@@ -2,6 +2,8 @@
 published: true
 title: Raster algebra with GDAL (and no QGIS)
 layout: post
+tags: [GDAL, QGIS, Raster, algebra, python, ubuntu, GIS]
+categories: [GIS]
 ---
 ## The problem
 
