@@ -1,9 +1,8 @@
 ---
 published: true
-title: [draft] raster algebra with GDAL (and no QGIS)
+title: draft - raster algebra with GDAL (and no QGIS)
 layout: post
 ---
-
 I recently tried to use the **QGIS** 2.14.1 raster calculator to do some very basic operations on a forest loss map. 
 
 The raster have a `~47000x46000` resolution with a `Byte` pixel type. The file size of the uncompressed **GeoTiff** version was about `2GB`.
