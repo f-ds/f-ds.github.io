@@ -55,7 +55,65 @@ Follow this 2 minutes tutorial [Vagrant and desktop virtualization](http://f-ds.
 
 ### Build GDAL with pyton bindings
 
-TODO
+First of all install the **numpy** and **scipy** python libraries, these are used by the python gdal utilities to perform mathematics operations
+
+```
+#$ sudo apt-get install python-numpy python-scipy 
+```
+
+then install the **C** and **python dev packages**
+
+```
+#$ sudo apt-get install build-essential python-all-dev
+```
+
+Download and extract the **GDAL 2.0.2** source package
+
+```
+#$ cd /tmp
+#/tmp$ wget http://download.osgeo.org/gdal/2.0.2/gdal-2.0.2.tar.gz
+#/tmp$ tar xvfz gdal-2.0.2.tar.gz
+#/tmp$ cd gdal-2.0.2.tar.gz
+```
+
+and run the configure script providing the parameter `with-python`
+
+```
+#/tmp$ ./configure --with-python
+```
+
+The executions could take a couple of minutes, at the end we have a report about what kind of GDAL build we are going to run
+
+```
+ [...]
+GDAL is now configured for x86_64-unknown-linux-gnu
+
+  Installation directory:    /usr/local
+  C compiler:                gcc -g -O2
+  C++ compiler:              g++ -g -O2
+  [...]
+  SWIG Bindings:             python
+  [...]
+```
+
+Check if the `SWIG Bindings:             python` line is present and then run 
+
+```
+#/tmp$ make -j 2
+```
+
+`-j 2` is the number of jobs we wanna run in order to speedup the process (see [make man page](http://linux.die.net/man/1/make)). Don't add more than the number of your virtual (or physical) logic threads.
+
+The make command takes a long time, It's time for a coffee and read the hacker news (or switch to your fucking assigned parallel task)
+
+after make command has finished run
+
+```
+#$ sudo make install
+#$ sudo ldconfig
+```
+
+and then cross your fingers and type `gdal_calc.py` on your command line. If you get the command help menu you can start with the actual raster processing. If you receive a bash or python error... Bad for you, it's time to fix something!
 
 ### Run the processing with gdal_calc.py
 
