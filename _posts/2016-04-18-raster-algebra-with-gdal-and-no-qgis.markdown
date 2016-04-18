@@ -117,4 +117,23 @@ and then cross your fingers and type `gdal_calc.py` on your command line. If you
 
 ### Run the processing with gdal_calc.py
 
-TODO
+ok so now upload on your VM your raster dataset, in my case the aggregated forest loss map, and perform the same computation we tried to run with QGIS: we want to create a new raster only with pixel value equals to 9 .
+
+```
+#/home/vagrant/$ gdal_calc.py -A italy_loss_2009_lzw.tif --outfile=result.tif --calc="(A==9)*9+(A!=9)*0" --format=GTiff --type=Byte
+```
+
+Let's break the `gdal_calc.py` command discussing its parameters 
+
+* `-A italy_loss_2009_lzw.tif` a list of input files (only one in this case), each of them preceded by the prefix **-A**, **-B**, ... **-Z**. these prefixes represents a handy placeholder for the raster names when we write the raster algebra expression
+
+* `--outfile=result.tif` the outputfile, gdal creates or overwrite it
+
+* `--calc="(A==9)*9+(A!=9)*0"` the raster algebra expression to compute. **A** is related to the raster associated to that placeholder.
+
+* `--format=GTiff` a GDAL supported format, By default it is **GTiff** (so it wouldn't be required in this case)
+
+* `--type=Byte` The type of the Pixel. Note that by default it is **Float64** which creates an output file which is ~8 times bigger in term of size if your input is **Byte**. we can't set this parameter from the QGIS GUI and it allows to avoid firther conversion processing and sometimes could help if you have a limitated HD free space.
+
+
+After some minutes I finally get my 2009 forest loss map, ready to be further processed!
