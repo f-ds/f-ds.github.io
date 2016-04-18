@@ -42,12 +42,14 @@ In the next sections we are going step-by-step to create a GDAL build with pyton
 
 Learn how to build GDAL could be very usefull for a GIS technician seems somethimes it's needed in order to use its brand new features or advanced configurations which are (still) not supported by QGIS.
 
+Do you have `gdal_calc.py` already working on your machine? jump directly to **Run the processing with gdal_calc.py**
+
 ## Let's make our hands dirty
 
 ### Create the environment
 The first thing to do is running a fresh installation of a Ubuntu distro, let's say Ubuntu precise. In my village we say: "old chicken makes a tasty broth". We can use also a non-fresh installation of course but... Why waste time with broken dependencies and other system missconfiguration when we have amazing tools like **Vagrant** and **VirtualBox**?
 
-Follow this 2 minutes tutorial [Vagrant and desktop virtualization](http://f-ds.github.io/devops/2016/04/14/real-vagrant-in-2-minutes-run-ubuntu-or-centos.html) and come back here when your Ubuntu is up and running
+Follow this 2 minutes tutorial [Vagrant and desktop virtualization](http://f-ds.github.io/devops/2016/04/14/real-vagrant-in-2-minutes-run-ubuntu-or-centos.html) and come back here when your Ubuntu is up and running.
 
 ### Build GDAL with pyton bindings
 
