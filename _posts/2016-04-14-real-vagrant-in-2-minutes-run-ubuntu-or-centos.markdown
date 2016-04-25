@@ -51,7 +51,7 @@ this repo it's not so fancy: there's just a basic Vagrantfile, which is the main
 
 Now you have everything you need and you are ready to run your first fresh VirtualMachine with Vagrant: no need for open the VM player, search for the proper ISO to install and waste time installing it...
 
-just go to the root of the previously cloned repo and run:
+just go to the root of the previously cloned repo and run ``vagrant up``
 
 ~~~~~~~~~~~~~~~~
 #/home/fds/work/code$ vagrant up
@@ -65,7 +65,7 @@ If it is the first time we run this VM Vagrant has to download the image from th
 
 But let's continue to play with the VM we've launched: you can log in on it in 2 different ways:
 
-Simply typing *vagrant ssh*
+Simply typing ``vagrant ssh``
 
 ~~~~~~~~~~~~~~~~
 #/home/fds/work/code$ vagrant ssh
@@ -95,16 +95,16 @@ In this way it's possible to connect to the VM also from another host in the sam
 
 Again: this weird IP address is configured in the Vagrantfile, you can set whatever valid address you want
 
-You can login/logout as many time you want, the VM will remains up and running untill we execute *vagrant halt*
+You can login/logout as many time you want, the VM will remains up and running untill we execute ``vagrant halt``
 
 ~~~~~~~~~~~~~~
 #/home/fds/work/code$ vagrant halt
 ==> default: Attempting graceful shutdown of VM...
 ~~~~~~~~~~~~~~~~~~~
 
-The VM will shutdown but all our changes will be saved and ready for the next `vagrant up`.
+The VM will shutdown but all our changes will be saved and ready for the next **vagrant up**.
 
-In order to destroy a VM and so delete its state
+In order to destroy a VM and so delete its state use the command ``vagrant destroy``
 
 ~~~~~~~~~~~~~~
 #/home/fds/work/code$ vagrant destroy
@@ -142,8 +142,10 @@ end
 *  Use **v.name**,  **v.memory** and **v.cpus** in the **config.vm.provider** section to change the VM default name and to assign the number of virtual CPU and memory
 * Read from the [Vagrant official doc](https://www.vagrantup.com/docs/vagrantfile/) the specifications of the vagrant file.
 
-One last thing: since we are using Virtual Box, which has its own GUI to control and configure the VM, after the first ``vagrant up`` we can control the VM also through the VBox GUI.
+**One last thing**: since we are using Virtual Box, which has its own GUI to control and configure the VM, after the first ``vagrant up`` we can control the VM also through the VBox GUI.
 
 ![The created VM available in VBox, our custom config are highlighted in red](https://raw.githubusercontent.com/f-ds/f-ds.github.io/master/public/img/vagrant-vbox.png)
 
-That's All, enjoy vagrant!
+In the screenshoot above you can see the created VM available in VBox, our custom config are highlighted in red.
+
+That's all, enjoy vagrant!
