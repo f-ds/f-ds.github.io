@@ -2,6 +2,8 @@
 published: true
 title: ogr2ogr for vector data ingestion
 layout: post
+tags: [GIS, gdal, vector, ogrinfo, ogr2ogr, ETL, ingestion, batch, processing]
+categories: [GIS]
 ---
 ## Overview
 
