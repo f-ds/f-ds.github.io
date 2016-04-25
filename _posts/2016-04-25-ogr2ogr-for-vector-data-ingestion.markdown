@@ -104,3 +104,13 @@ This output is very informative but also extremely verbose:
 Yes, the `-sql` parameter allows us to run **SQL** queries although the underlying datastore is not a relational database! This is very useful and it saves my back many times. But let's talk about this in the next section
 
 ## ogr2ogr
+
+With ogr2ogr we can do many things:
+
+* Convert almost any vector format to almost any other vector format
+
+* Filter on the fly with SQL queries features from any dataset
+
+* Use ogr2ogr as base component of an ingestion system / ETL process
+
+
