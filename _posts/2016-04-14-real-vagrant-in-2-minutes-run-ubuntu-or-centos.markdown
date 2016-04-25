@@ -142,5 +142,8 @@ end
 *  Use **v.name**,  **v.memory** and **v.cpus** in the **config.vm.provider** section to change the VM default name and to assign the number of virtual CPU and memory
 * Read from the [Vagrant official doc](https://www.vagrantup.com/docs/vagrantfile/) the specifications of the vagrant file.
 
+One last thing: since we are using Virtual Box, which has its own GUI to control and configure the VM, after the first ``vagrant up`` we can control the VM also through the VBox GUI.
+
+![The created VM available in VBox, our custom config are highlighted in red](https://raw.githubusercontent.com/f-ds/f-ds.github.io/master/public/img/vagrant-vbox.png)
 
 That's All, enjoy vagrant!
