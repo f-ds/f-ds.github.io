@@ -127,11 +127,19 @@ Vagrant.configure(2) do |config|
     config.ssh.password = "vagrant"
     config.ssh.insert_key = true
     config.vm.network "private_network", ip: "192.168.66.6"
+    
+    config.vm.provider "virtualbox" do |v|
+      v.name = "my-fresh-OS"
+      v.memory = 2048
+      v.cpus = 2
+    end
+  
 end
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 * Comment the **config.vm.box** setting you don't wanna run or add another one from the [hashicorp website](https://www.virtualbox.org/wiki/Download_Old_Builds_5_0)
 * Change the **config.ssh.password** and **ip** if you want. 
+*  Use **v.name**,  **v.memory** and **v.cpus** in the **config.vm.provider** section to change the VM default name and to assign the number of virtual CPU and memory
 * Read from the [Vagrant official doc](https://www.vagrantup.com/docs/vagrantfile/) the specifications of the vagrant file.
 
 
