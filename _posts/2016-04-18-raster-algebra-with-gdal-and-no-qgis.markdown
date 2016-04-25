@@ -15,7 +15,7 @@ Since my forest loss map represents the areas where forests has been lost in eac
 
 My task was simple: create a single raster representing the forest loss status for each single year (so create 14 different files). This different format was needed for a further elaboration.
 
-I opened QGIS and I used its **Raster calucator** functionality
+I opened QGIS and I used its **Raster calcuator** functionality
 
 ![The QGis Raster Calculator GUI](https://rawgit.com/f-ds/f-ds.github.io/master/public/img/raster-calculator.jpg){: height="345px" width="500px"}
 
