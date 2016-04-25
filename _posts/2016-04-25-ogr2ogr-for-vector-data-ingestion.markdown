@@ -117,11 +117,11 @@ The basic structure of a `ogr2ogr` command is:
 
 `ogr2ogr [parameters] -f [out_format] outLayer sourceLayer`
 
-# `[parameters] ` one or more params like **-append** or **-overwrite** 
+1. `[parameters] ` one or more params like **-append** or **-overwrite** 
 
-# `[out_format]` The Code of the output format, see [this table](http://www.gdal.org/ogr_formats.html)
+2. `[out_format]` The Code of the output format, see [this table](http://www.gdal.org/ogr_formats.html)
 
-# `outLayer sourceLayer` the name of the layer and how to connect to it. 
+3. `outLayer sourceLayer` the name of the layer and how to connect to it. 
 
 Regarding to the last point
 
@@ -170,10 +170,3 @@ with the supplied query `SELECT rivername, continent, cast(lenght as integer) FR
 Relying on the `continent` field we pick only the features related to Africa, America and Oceania continents.
 
 Also note the final `-skipFailures` parameter which allows ogr2ogr to continue with the process when it fails with a features.
-
-
-
-
-
-
-
