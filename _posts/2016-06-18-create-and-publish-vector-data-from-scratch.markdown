@@ -3,27 +3,31 @@ published: false
 title: Create and Publish vector data from scratch
 layout: post
 ---
-This post is about vector data **creation** and **publishing** in a web map.
+This post shows how to **create** *georeferenced vector data* from scratch an **publish** them as a *layer* on a web map.
 
-Why this should be interesting? Aren't there enough good map creation online tools out of there?
+* Aren't there enough good map creation online tools out of there? 
+* Why should I learn how to do it from scratch? 
+* Why should I have to deal with desktop GIS software and Linux servers instead of using a modern web map maker?
 
-Well, yes. But let's say that after having try all the coolest online maptools your impression is that none of them fits your requirements and you need more flexibility to design the dataset and the functionality of the web map... in that case this post could be interesting.
+Well, if after having tried all the coolest online mapcreators you still feel that you need more control on the design of the data and the functionalities of the map... in that case this post could be interesting.
 
-For the creation of the data the only tool required is QGis: we will draw our custom **features** (geometries with a spatial location) and we will save them as a shapefile.
+Let's break the process in 3 different steps:
 
-For the publication of the data... well we must have first a server with some geospatial tools like GeoServer, PostGIS, GDAL up and running. This post will provide few hints and references about how to build a such environment, it will mostly assume that the reader knows what the above mentioned tools are.
+1. **Layer creation** we only need for  QGIS and an internet connection: we will draw our custom vector **layer** built of many **features** (geometries with a spatial location) and we will save them as a shapefile.
 
-# Let's make some vector data
+2. **Layer publication** well, we must have first a server with some geospatial tools like GeoServer, PostGIS, GDAL up and running. This post will provide few hints and references about how to build a such environment, it will mostly assume that the reader knows what the above mentioned tools are.
+
+3. **Update the published data** with QGIS and the WFS protocol we can update vector layers published on a remote host as it was hosted locally.
+
+## Layer creation
+### Let's draw some vector data
 
 First at all we need QGIS so download http://www.qgis.org/en/site/ and install it
 With postgis we can create any geometries like Points, Lines and Polygons like we can do with Inkscape or corel Draw but the cool thing is that those geometries have a location in the space so we can easilly use them to build a map mixing it up with any other map API service.
 
-Ok let's make the first geometry, it's easy to activate the QGIS drawing tools and start drawing a polygon but... 
+Ok let's make the first geometry, it's quite easy to activate the QGIS drawing tools and start drawing a polygon but... 
 
-
-[IMG]
-
-
+![Drawing a polygon with no background](https://raw.githubusercontent.com/f-ds/f-ds.github.io/master/public/img/make_data_no_bkg.png)
 
 WHERE are we drawing it? How the spatial location of that geometry can be managed?
 
@@ -32,19 +36,13 @@ In QGIS we can quickly install a plugin that allow us to import in the QGIS Laye
 
 For example OpenStreetMap:
 
-
-[IMG]
-
-
+![Drawing a polygon over Italy using OSM as background](https://raw.githubusercontent.com/f-ds/f-ds.github.io/master/public/img/make_data_osm_as_bkg.png)
 
 So WHERE are we drawing it? We are drawing a polygon over the belpaese!
 
+Or here around the colosseum:
 
-Or here around the colosseum
-
-
-[IMG]
-
+![Drawing a polygon over the colosseum](https://raw.githubusercontent.com/f-ds/f-ds.github.io/master/public/img/make_data_colosseum.png)
 
 Ok I hope this overview have clarified what are we going to do so let's continue with 2 minutes tutorial.
 
