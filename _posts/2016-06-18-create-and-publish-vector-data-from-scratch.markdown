@@ -29,29 +29,30 @@ Ok let's make the first geometry, it's quite easy to activate the QGIS drawing t
 
 ![Drawing a polygon with no background](https://raw.githubusercontent.com/f-ds/f-ds.github.io/master/public/img/make_data_no_bkg.png)
 
-WHERE are we drawing it? How the spatial location of that geometry can be managed?
+...**Where** are we drawing it? How the spatial location of that geometry can be managed?
 
-well, now concepts like projections and reference systems could be introduced... but let's make the story short and start to build things! 
+well, now we can start to talk for hours about things like map projections and reference systems... but let's make the story short and start to build things! 
+
 In QGIS we can quickly install a plugin that allow us to import in the QGIS Layers one from the most famous maps services.
 
 For example OpenStreetMap:
 
 ![Drawing a polygon over Italy using OSM as background](https://raw.githubusercontent.com/f-ds/f-ds.github.io/master/public/img/make_data_osm_as_bkg.png)
 
-So WHERE are we drawing it? We are drawing a polygon over the belpaese!
+So again, **where** are we drawing it? We are drawing a polygon over Italy!
 
-Or here around the colosseum:
+In the example below instead we draw a polygon around the colosseum:
 
 ![Drawing a polygon over the colosseum](https://raw.githubusercontent.com/f-ds/f-ds.github.io/master/public/img/make_data_colosseum.png)
 
-Ok I hope this overview have clarified what are we going to do so let's continue with 2 minutes tutorial.
+Ok, I hope this overview have clarified what are we going to do in this post...  let's continue with 2 minutes tutorial.
 
 Assuming that you have a recent QGIS release already installed and an internet connection:
 
 
 1) Install the QGIS web plugin
 
-2) Load the openstreetmap layer and zoom in to Lucca
+2) Load the openstreetmap layer and zoom over the feature 
 
 3) Create a new vector layer using a Shapefile 
 
