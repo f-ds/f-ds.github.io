@@ -31,7 +31,7 @@ But the cool thing is that if those geometries have a location on the earth (for
 
 Ok let's make the first geometry, it's quite easy to activate the QGIS drawing tools and start drawing a polygon but... 
 
-![Drawing a polygon with no background](https://raw.githubusercontent.com/f-ds/f-ds.github.io/master/public/img/make_data_no_bkg.png){:height="50%"}.
+![Drawing a polygon with no background](https://raw.githubusercontent.com/f-ds/f-ds.github.io/master/public/img/make_data_no_bkg.png){:height="36px" width="36px"}
 
 ...**Where** are we drawing it? How the spatial location of that geometry can be managed?
 
