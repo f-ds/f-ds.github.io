@@ -31,7 +31,7 @@ But the cool thing is that if those geometries have a location on the earth (for
 
 Ok let's make the first geometry, it's quite easy to activate the QGIS drawing tools and start drawing a polygon but... 
 
-![Drawing a polygon with no background](https://raw.githubusercontent.com/f-ds/f-ds.github.io/master/public/img/make_data_no_bkg.png){:style="width: 200px"}
+<img alt="Drawing a polygon with no background" src="https://raw.githubusercontent.com/f-ds/f-ds.github.io/master/public/img/make_data_no_bkg.png" width="50%">
 
 ...**Where** are we drawing it? How the spatial location of that geometry can be managed?
 
@@ -41,13 +41,13 @@ In QGIS we can quickly install the OpenLayers plugin that allow us to import in 
 
 For example OpenStreetMap:
 
-![Drawing a polygon over Italy using OSM as background](https://raw.githubusercontent.com/f-ds/f-ds.github.io/master/public/img/make_data_osm_as_bkg.png)
+<img alt="Drawing a polygon over Italy using OSM as background" src="https://raw.githubusercontent.com/f-ds/f-ds.github.io/master/public/img/make_data_osm_as_bkg.png" width="50%">
 
 So answering to the previous question: we are drawing a polygon over Italy!
 
 In the example below instead a polygon around the colosseum is drawn:
 
-![Drawing a polygon over the colosseum](https://raw.githubusercontent.com/f-ds/f-ds.github.io/master/public/img/make_data_colosseum.png)
+<img alt="Drawing a polygon over the colosseum" src="https://raw.githubusercontent.com/f-ds/f-ds.github.io/master/public/img/make_data_colosseum.png" width="50%">
 
 Ok, I hope this overview have clarified what are we going to do in this post...  let's continue with 2 minutes tutorial.
 
@@ -55,15 +55,15 @@ Assuming that you have a recent QGIS release already installed and an internet c
 
 1. Install the QGIS OpenLayers plugin
 
-![How to install QGIS OpenLayers plugin](https://raw.githubusercontent.com/f-ds/f-ds.github.io/master/public/img/make_data_install_openlayer_plugin.png)
+<img alt="How to install QGIS OpenLayers plugin" src="https://raw.githubusercontent.com/f-ds/f-ds.github.io/master/public/img/make_data_install_openlayer_plugin.png" width="50%">
 
 2. Load the OpenStreetmap layer, used as reference background to draw our layers
 
-![Activate the OpenLayers plugin](https://raw.githubusercontent.com/f-ds/f-ds.github.io/master/public/img/make_data_activate_openlayer.png)
+<img alt="Activate the OpenLayers plugin" src="https://raw.githubusercontent.com/f-ds/f-ds.github.io/master/public/img/make_data_activate_openlayer.png" width="50%">
 
 and them zoom-in over the geographic feature you want to model (a country boundary, a river, a street...) I decided to zoom-in over my wonderful city **Lucca**
 
-![Zoom in over Lucca](https://raw.githubusercontent.com/f-ds/f-ds.github.io/master/public/img/make_data_lucca.png)
+<img alt="Zoom in over Lucca" src="https://raw.githubusercontent.com/f-ds/f-ds.github.io/master/public/img/make_data_lucca.png" width="50%">
 
 3. Create a new vector layer using a Shapefile 
 
@@ -71,7 +71,7 @@ browsing the top menu select
 
 Layer -> Create Layer -> New Shapefile Layer ...
 
-![Create new Shapefile layer](https://raw.githubusercontent.com/f-ds/f-ds.github.io/master/public/img/make_data_create_new_shapefilelayer.png)
+<img alt="Create new Shapefile layer" src="https://raw.githubusercontent.com/f-ds/f-ds.github.io/master/public/img/make_data_create_new_shapefilelayer.png" width="50%">
 
 --
 
@@ -79,16 +79,14 @@ then press OK and type your output file name
 
 --
 
-![New layer dialogue box](https://raw.githubusercontent.com/f-ds/f-ds.github.io/master/public/img/make_data_new_layer_dialogue_mod.png)
+<img alt="New layer dialogue box" src="https://raw.githubusercontent.com/f-ds/f-ds.github.io/master/public/img/make_data_new_layer_dialogue_mod.png" width="50%">
 
 4) Draw a polygon
 
-![Add a new feature drawing it](https://raw.githubusercontent.com/f-ds/f-ds.github.io/master/public/img/make_data_draw feature_mod.png)
-
+<img alt="Add a new feature drawing it" src="https://raw.githubusercontent.com/f-ds/f-ds.github.io/master/public/img/make_data_draw feature_mod.png" width="50%">
 --
 
-![Add attributes](https://raw.githubusercontent.com/f-ds/f-ds.github.io/master/public/img/make_data_edit_attributes.png)
-
+<img alt="Add attributes" src="https://raw.githubusercontent.com/f-ds/f-ds.github.io/master/public/img/make_data_edit_attributes.png" width="50%">
 
 # Build up the environment
 
