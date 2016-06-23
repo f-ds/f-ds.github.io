@@ -3,19 +3,24 @@ published: false
 title: Create and Publish vector data from scratch
 layout: post
 ---
-This post shows how to **create** a *georeferenced vector dataset* from scratch an **publish** it as a *layer* on a web map.
+This post shows how to *create* a **georeferenced vector dataset** from scratch an *publish* it as a **layer** on a web map.
 
 Perhaps you are now wondering...
 
 * Aren't there enough good online maps-maker tools out of there? 
 * Why should I learn how to do it from scratch? 
-* Why should I have to deal with desktop GIS software and Linux servers instead of using a modern web maps-maker?
+* Why should I have to deal with GIS software and servers instead of simply use a web map maker?
 
-Well, if after having tried all the coolest online maps-maker you still feel that you need more control on the design of the data and the functionalities of the map... in that case this post could be worth to be read.
+Well, try to bring out the best from the available online tools but if after that you still need more control over the creation of the maps's data and functionalities... check this post out!
 
-Let's break the whole process in 3 main steps:
+##The whole process in 3 steps
 
-1. **Layer creation** we only need for QGIS and an internet connection: we will draw our custom vector **layer** built of many **features** (geometries with a spatial location) and we will save them as shapefiles.
+Let's break the whole process in 3 main steps, explaining them one by one in sequence
+
+1. **Layer creation**
+
+**What we need?** QGIS and an internet connection
+**What we do?** we will create a **georeferenced vector dataset** built of many **features** (geometries with a spatial location) exporting it as a shapefile.
 
 2. **Layer publication** well, we must have first a server with some geospatial tools like GeoServer, PostGIS, GDAL up and running. This post will provide few hints and references about how to build a such environment, but the reader must be aware of what the above mentioned tools are.
 
