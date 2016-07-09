@@ -84,13 +84,13 @@ Assuming that you have a recent QGIS release already installed and an internet c
 
    and them **zoom-in** over the geographic feature you want to model (a country boundary, a river, a  street...)
 
-I decided to model the Reinassence Fortification Walls of my wonderful city **Lucca**
+I decided to model the Reinassence Fortification Wall of my wonderful city **Lucca**
 
    <img title="CLICK TO OPEN !!! - Zoom in over Lucca" src="https://raw.githubusercontent.com/f-ds/f-ds.github.io/master/public/img/make_data_lucca.png" width="50%">
 
 3. Create a new vector layer using a **Shapefile** format.
 
-   **HINT**: Read something about the ancient (Shapefile)[https://en.wikipedia.org/wiki/Shapefile] geospatial vector data format if you never heard about it.
+   **HINT**: Read something about the ancient [Shapefile](https://en.wikipedia.org/wiki/Shapefile) geospatial vector data format if you never heard about it.
 
    from the top menu select:
 
@@ -100,13 +100,20 @@ I decided to model the Reinassence Fortification Walls of my wonderful city **Lu
 
    then press OK and type your output file name.
 
-   Fill-in the information about the `Geometry Type` and `Attributes` (fields) in the following dialogue box as shown below:
+   Fill-in the information about the `Geometry Type` and `Attributes` (aka fields) in the following dialogue box as shown below:
 
    <img title="CLICK TO OPEN !!! - New layer dialogue box" src="https://raw.githubusercontent.com/f-ds/f-ds.github.io/master/public/img/make_data_new_layer_dialogue_mod.png" width="50%">
 
-4. Draw a polygon
+4. Now it's time to draw a polygon:
+
+   Select the created layer on the QGIS Layers menu then click on
+      * the orange pencil **( 1 )** button to activate the editing of the layer
+      * The odd green and yellow button **( 2 )** to add a new feature.
+      * Use the cursor to draw the polygon... In this example we draw a quite complicated polygon tracing the perimeter of the Lucca's Furtification Wall.
 
    <img title="CLICK TO OPEN !!! - Add a new feature drawing it" src="https://raw.githubusercontent.com/f-ds/f-ds.github.io/master/public/img/make_data_draw feature_mod.png" width="50%">
+
+   When we have closed the polygon a dialogue box will appear: here is the place to fill-in the attributes value of our features.
 
    <img title="CLICK TO OPEN !!! - Add attributes" src="https://raw.githubusercontent.com/f-ds/f-ds.github.io/master/public/img/make_data_edit_attributes.png" width="20%">
 
