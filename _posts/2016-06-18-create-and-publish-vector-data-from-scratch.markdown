@@ -1,7 +1,9 @@
 ---
-published: false
+published: true
 title: Create and Publish vector data from scratch
 layout: post
+tags: [QGIS, featrures, layers, geometries]
+categories: [gis]
 ---
 This post shows how to *create* a **georeferenced vector dataset** from scratch an *publish* it as a **layer** on a web map.
 
