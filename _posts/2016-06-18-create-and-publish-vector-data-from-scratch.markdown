@@ -60,12 +60,15 @@ Ok, I hope this introduction have clarified what are we going to do in this post
 Assuming that you have a recent QGIS release already installed and an internet connection:
 
 1. Install the QGIS OpenLayers plugin
+
    From the top menu select `Plugins` -> `Manage and Install Plugins...`
+
    In the Search input type `openlayer`
 
-<img alt="How to install QGIS OpenLayers plugin" src="https://raw.githubusercontent.com/f-ds/f-ds.github.io/master/public/img/make_data_install_openlayer_plugin.png" width="50%">
+   <img alt="How to install QGIS OpenLayers plugin" src="https://raw.githubusercontent.com/f-ds/f-ds.github.io/master/public/img/make_data_install_openlayer_plugin.png" width="50%">
 
 2. The top menu `Web` is now available.
+
    Load the OpenStreetmap layer to set a reference background to draw our features
 
    <img alt="Activate the OpenLayers plugin" src="https://raw.githubusercontent.com/f-ds/f-ds.github.io/master/public/img/make_data_activate_openlayer.png" width="50%">
@@ -82,20 +85,15 @@ Assuming that you have a recent QGIS release already installed and an internet c
 
    <img alt="Create new Shapefile layer" src="https://raw.githubusercontent.com/f-ds/f-ds.github.io/master/public/img/make_data_create_new_shapefilelayer.png" width="50%">
 
---
+   then press OK and type your output file name
 
-then press OK and type your output file name
+   <img alt="New layer dialogue box" src="https://raw.githubusercontent.com/f-ds/f-ds.github.io/master/public/img/make_data_new_layer_dialogue_mod.png" width="50%">
 
---
+4. Draw a polygon
 
-<img alt="New layer dialogue box" src="https://raw.githubusercontent.com/f-ds/f-ds.github.io/master/public/img/make_data_new_layer_dialogue_mod.png" width="50%">
+   <img alt="Add a new feature drawing it" src="https://raw.githubusercontent.com/f-ds/f-ds.github.io/master/public/img/make_data_draw feature_mod.png" width="50%">
 
-4) Draw a polygon
-
-<img alt="Add a new feature drawing it" src="https://raw.githubusercontent.com/f-ds/f-ds.github.io/master/public/img/make_data_draw feature_mod.png" width="50%">
---
-
-<img alt="Add attributes" src="https://raw.githubusercontent.com/f-ds/f-ds.github.io/master/public/img/make_data_edit_attributes.png" width="50%">
+   <img alt="Add attributes" src="https://raw.githubusercontent.com/f-ds/f-ds.github.io/master/public/img/make_data_edit_attributes.png" width="50%">
 
 # Build up the environment
 
