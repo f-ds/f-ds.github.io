@@ -60,7 +60,7 @@ Among the others we can use OpenStreetMap:
 
 So answering to the previous question we are drawing a polygon over Italy!
 
-In the example below a polygon around the colosseum is drawn:
+And here we have drawn a polygon around the colosseum:
 
 <img title="CLICK TO OPEN !!! - Drawing a polygon over the colosseum" src="https://raw.githubusercontent.com/f-ds/f-ds.github.io/master/public/img/make_data_colosseum.png" width="50%">
 
@@ -144,9 +144,11 @@ Assuming that you have a recent QGIS release already installed and an internet c
 
    Some programs creates also few more files, always with the same filename but different extension: those serve for advanced indexing or other vendor capabilities.
 
-## Final Summary
+## Summary
 
-In this post we learnt to create a custom vector geospatial dataset which can be used as a **layer** of geospatial **features** in any maps.
+**Celebrate!** You created your first **geospatial Feature! **
+
+In this post we have learnt to create a custom vector geospatial dataset which can be used as a **layer** of geospatial **features** in any maps.
 
 The basics **tools** introduced have been **QGIS** and its **Openlayer plugin** plus the **Shapefile** format.
 
