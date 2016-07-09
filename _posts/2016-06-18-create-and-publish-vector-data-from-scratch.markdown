@@ -60,24 +60,27 @@ Ok, I hope this introduction have clarified what are we going to do in this post
 Assuming that you have a recent QGIS release already installed and an internet connection:
 
 1. Install the QGIS OpenLayers plugin
+   From the top menu select `Plugins` -> `Manage and Install Plugins...`
+   In the Search input type `openlayer`
 
 <img alt="How to install QGIS OpenLayers plugin" src="https://raw.githubusercontent.com/f-ds/f-ds.github.io/master/public/img/make_data_install_openlayer_plugin.png" width="50%">
 
-2. Load the OpenStreetmap layer, used as reference background to draw our layers
+2. The top menu `Web` is now available.
+   Load the OpenStreetmap layer to set a reference background to draw our features
 
-<img alt="Activate the OpenLayers plugin" src="https://raw.githubusercontent.com/f-ds/f-ds.github.io/master/public/img/make_data_activate_openlayer.png" width="50%">
+   <img alt="Activate the OpenLayers plugin" src="https://raw.githubusercontent.com/f-ds/f-ds.github.io/master/public/img/make_data_activate_openlayer.png" width="50%">
 
-and them zoom-in over the geographic feature you want to model (a country boundary, a river, a street...) I decided to zoom-in over my wonderful city **Lucca**
+   and them zoom-in over the geographic feature you want to model (a country boundary, a river, a  street...) I decided to zoom-in over my wonderful city **Lucca**
 
-<img alt="Zoom in over Lucca" src="https://raw.githubusercontent.com/f-ds/f-ds.github.io/master/public/img/make_data_lucca.png" width="50%">
+   <img alt="Zoom in over Lucca" src="https://raw.githubusercontent.com/f-ds/f-ds.github.io/master/public/img/make_data_lucca.png" width="50%">
 
 3. Create a new vector layer using a Shapefile 
 
-browsing the top menu select 
+   browsing the top menu select 
 
-Layer -> Create Layer -> New Shapefile Layer ...
+   `Layer` -> `Create Layer` -> `New Shapefile Layer ...`
 
-<img alt="Create new Shapefile layer" src="https://raw.githubusercontent.com/f-ds/f-ds.github.io/master/public/img/make_data_create_new_shapefilelayer.png" width="50%">
+   <img alt="Create new Shapefile layer" src="https://raw.githubusercontent.com/f-ds/f-ds.github.io/master/public/img/make_data_create_new_shapefilelayer.png" width="50%">
 
 --
 
