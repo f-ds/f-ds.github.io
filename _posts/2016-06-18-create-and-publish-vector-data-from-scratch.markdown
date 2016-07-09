@@ -130,7 +130,7 @@ Assuming that you have a recent QGIS release already installed and an internet c
 
    We have 4 core files representing the basic and mandatory Shapefile components. 
    
-   <img title="CLICK TO OPEN !!! - Shapefile structure" src="https://raw.githubusercontent.com/f-ds/f-ds.github.io/master/public/img/make_data_shpstructure.png" width="20%">
+   <img title="CLICK TO OPEN !!! - Shapefile structure" src="https://raw.githubusercontent.com/f-ds/f-ds.github.io/master/public/img/make_data_shpstructure.png" width="50%">
 
    * **.shp** shape format; the feature geometry itself
 
