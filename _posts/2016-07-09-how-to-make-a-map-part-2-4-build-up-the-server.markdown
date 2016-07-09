@@ -3,7 +3,6 @@ published: true
 title: How To make a map part 2/4 - build up the server
 layout: post
 ---
-# Introduction
 
 Ok this is the "nerdest" part of the whole process. If you are interested only in the data creation and management you can read only the next section and beg your your nerd best friend to read the rest of the sections and build the system for you.
 
