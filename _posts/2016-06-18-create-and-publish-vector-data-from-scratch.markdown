@@ -35,7 +35,9 @@ As just said before, we're going to break the process in 3 main steps:
 First of all we need QGIS so [download](http://www.qgis.org/en/site/) and install it.
 With QGIS we can create any geometries like `Points`, `Lines` and `Polygons` as we can do with any other traditional vector desktop software like *Inkscape* or *corel Draw* but the cool thing here is that if those geometries have a location on the earth (for example they are the shape of a country or a neighborhood) with QGIS we can automayically assign the coordinates to all the vertex.
 
-Ok let's make the first 1 minute quick-and-dirty  tutorial: it's quite easy to activate the QGIS drawing tools and start drawing a polygon but... 
+### 1 minute quick-and-dirty  tutorial
+
+It's quite easy to activate the QGIS drawing tools and start drawing a polygon but... 
 
 <img title="CLICK TO OPEN !!! - Drawing a polygon with no background" src="https://raw.githubusercontent.com/f-ds/f-ds.github.io/master/public/img/make_data_no_bkg.png" width="50%">
 
@@ -55,7 +57,7 @@ In the example below a polygon around the colosseum is drawn:
 
 <img title="CLICK TO OPEN !!! - Drawing a polygon over the colosseum" src="https://raw.githubusercontent.com/f-ds/f-ds.github.io/master/public/img/make_data_colosseum.png" width="50%">
 
-Ok, I hope this introduction have clarified what are we going to do in this post...  let's continue with 5 minutes tutorial.
+###5 minutes tutorial ( maybe 10 )
 
 Assuming that you have a recent QGIS release already installed and an internet connection:
 
