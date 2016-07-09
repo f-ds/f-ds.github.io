@@ -3,11 +3,11 @@ published: false
 title: Build up a backend to make maps
 layout: post
 ---
-Ok this is the "nerdest" part of the whole process. If you are interested only in the data creation and management you can read only the next section and beg your your nerd best friend to read the rest of the sections and build the system for you.
+Ok this is the most technical part of the whole process. If you are only interested in the data creation and management have a look only to the next section and beg your your nerd best friend to read the rest of the post and do the nerd work for you.
 
 # Infrastructure overview
 
-PUT here a Diagram!
+PUT here an amazing Diagram! explaining what are Geoserver, PostGIS and GDAL
 
 # Buy a Virtual Machine
 
