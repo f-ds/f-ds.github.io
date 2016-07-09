@@ -37,7 +37,7 @@ With QGIS we can create any geometries like `Points`, `Lines` and `Polygons` as 
 
 Ok let's make the first 1 minute quick-and-dirty  tutorial: it's quite easy to activate the QGIS drawing tools and start drawing a polygon but... 
 
-<img alt="Drawing a polygon with no background" src="https://raw.githubusercontent.com/f-ds/f-ds.github.io/master/public/img/make_data_no_bkg.png" width="50%">
+<img title="CLICK TO OPEN !!! - Drawing a polygon with no background" src="https://raw.githubusercontent.com/f-ds/f-ds.github.io/master/public/img/make_data_no_bkg.png" width="50%">
 
 ...**Where** are we drawing it? How the spatial location of that geometry can be managed?
 
@@ -47,13 +47,13 @@ In QGIS we can easilly install the OpenLayers plugin that allow us to set in the
 
 Among the others we can use OpenStreetMap:
 
-<img alt="Drawing a polygon over Italy using OSM as background" src="https://raw.githubusercontent.com/f-ds/f-ds.github.io/master/public/img/make_data_osm_as_bkg.png" width="50%">
+<img title="CLICK TO OPEN !!! - Drawing a polygon over Italy using OSM as background" src="https://raw.githubusercontent.com/f-ds/f-ds.github.io/master/public/img/make_data_osm_as_bkg.png" width="50%">
 
 So answering to the previous question we are drawing a polygon over Italy!
 
 In the example below a polygon around the colosseum is drawn:
 
-<img alt="Drawing a polygon over the colosseum" src="https://raw.githubusercontent.com/f-ds/f-ds.github.io/master/public/img/make_data_colosseum.png" width="50%">
+<img title="CLICK TO OPEN !!! - Drawing a polygon over the colosseum" src="https://raw.githubusercontent.com/f-ds/f-ds.github.io/master/public/img/make_data_colosseum.png" width="50%">
 
 Ok, I hope this introduction have clarified what are we going to do in this post...  let's continue with 5 minutes tutorial.
 
@@ -65,17 +65,17 @@ Assuming that you have a recent QGIS release already installed and an internet c
 
    In the Search input type `openlayer`
 
-   <img alt="How to install QGIS OpenLayers plugin" src="https://raw.githubusercontent.com/f-ds/f-ds.github.io/master/public/img/make_data_install_openlayer_plugin.png" width="50%">
+   <img title="CLICK TO OPEN !!! - How to install QGIS OpenLayers plugin" src="https://raw.githubusercontent.com/f-ds/f-ds.github.io/master/public/img/make_data_install_openlayer_plugin.png" width="50%">
 
 2. The top menu `Web` is now available.
 
    Load the OpenStreetmap layer to set a reference background to draw our features
 
-   <img alt="Activate the OpenLayers plugin" src="https://raw.githubusercontent.com/f-ds/f-ds.github.io/master/public/img/make_data_activate_openlayer.png" width="50%">
+   <img title="CLICK TO OPEN !!! - Activate the OpenLayers plugin" src="https://raw.githubusercontent.com/f-ds/f-ds.github.io/master/public/img/make_data_activate_openlayer.png" width="50%">
 
    and them zoom-in over the geographic feature you want to model (a country boundary, a river, a  street...) I decided to zoom-in over my wonderful city **Lucca**
 
-   <img alt="Zoom in over Lucca" src="https://raw.githubusercontent.com/f-ds/f-ds.github.io/master/public/img/make_data_lucca.png" width="50%">
+   <img title="CLICK TO OPEN !!! - Zoom in over Lucca" src="https://raw.githubusercontent.com/f-ds/f-ds.github.io/master/public/img/make_data_lucca.png" width="50%">
 
 3. Create a new vector layer using a Shapefile 
 
@@ -83,17 +83,17 @@ Assuming that you have a recent QGIS release already installed and an internet c
 
    `Layer` -> `Create Layer` -> `New Shapefile Layer ...`
 
-   <img alt="Create new Shapefile layer" src="https://raw.githubusercontent.com/f-ds/f-ds.github.io/master/public/img/make_data_create_new_shapefilelayer.png" width="50%">
+   <img title="CLICK TO OPEN !!! - Create new Shapefile layer" src="https://raw.githubusercontent.com/f-ds/f-ds.github.io/master/public/img/make_data_create_new_shapefilelayer.png" width="50%">
 
    then press OK and type your output file name
 
-   <img alt="New layer dialogue box" src="https://raw.githubusercontent.com/f-ds/f-ds.github.io/master/public/img/make_data_new_layer_dialogue_mod.png" width="50%">
+   <img title="CLICK TO OPEN !!! - New layer dialogue box" src="https://raw.githubusercontent.com/f-ds/f-ds.github.io/master/public/img/make_data_new_layer_dialogue_mod.png" width="50%">
 
 4. Draw a polygon
 
-   <img alt="Add a new feature drawing it" src="https://raw.githubusercontent.com/f-ds/f-ds.github.io/master/public/img/make_data_draw feature_mod.png" width="50%">
+   <img title="CLICK TO OPEN !!! - Add a new feature drawing it" src="https://raw.githubusercontent.com/f-ds/f-ds.github.io/master/public/img/make_data_draw feature_mod.png" width="50%">
 
-   <img alt="Add attributes" src="https://raw.githubusercontent.com/f-ds/f-ds.github.io/master/public/img/make_data_edit_attributes.png" width="50%">
+   <img title="CLICK TO OPEN !!! - Add attributes" src="https://raw.githubusercontent.com/f-ds/f-ds.github.io/master/public/img/make_data_edit_attributes.png" width="50%">
 
 # Build up the environment
 
