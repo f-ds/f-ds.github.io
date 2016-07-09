@@ -146,7 +146,7 @@ Assuming that you have a recent QGIS release already installed and an internet c
 
 ## Summary
 
-**Celebrate!** You created your first *geospatial Feature!*
+**Celebrate!** You created your first *geospatial Layer from scratch!*
 
 In this post we have learnt to create a custom vector geospatial dataset which can be used as a **layer** of geospatial **features** in any maps.
 
