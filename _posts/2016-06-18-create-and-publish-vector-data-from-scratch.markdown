@@ -5,56 +5,57 @@ layout: post
 ---
 This post shows how to *create* a **georeferenced vector dataset** from scratch an *publish* it as a **layer** on a web map.
 
+Basically it explain how to, in sequence
+
+* Draw georeferenced geometries called *features** over a map background taken from one of the most popular free map tiles services
+* Build up a simple geospatial infrastructure from scratch
+* Use the WFS protocol to easilly keep the features updated
+
 Perhaps you are now wondering...
 
 * Aren't there enough good online maps-maker tools out of there? 
 * Why should I learn how to do it from scratch? 
-* Why should I have to deal with GIS software and servers instead of simply use a web map maker?
+* Why should I have to deal with GIS software and Linux instead of simply use an online map maker?
 
-Well, try to bring out the best from the available online tools but if after that you still need more control over the creation of the maps's data and functionalities... check this post out!
+Well, try to bring out the best from mapbox and cartodb but if after that you still need more control over the overall map creation or simply you want to avoid fees... check this post out!
 
 ##The whole process in 3 steps
 
-Let's break the whole process in 3 main steps, explaining them one by one in sequence
+As just said before, we're going to break the process in 3 main steps:
 
-1. **Layer creation**
+1. **Layer creation** We will create a **georeferenced vector dataset** built of many **features**exporting it as a shapefile.
 
-**What we need?** QGIS and an internet connection
-**What we do?** we will create a **georeferenced vector dataset** built of many **features** (geometries with a spatial location) exporting it as a shapefile.
+2. **Layer publication** Let's use some cool DevOps tools to build up in 10 minutes a production Linux server with GeoServer, PostGIS, GDAL ready to host and serve our custom geospatial data.
 
-2. **Layer publication** well, we must have first a server with some geospatial tools like GeoServer, PostGIS, GDAL up and running. This post will provide few hints and references about how to build a such environment, but the reader must be aware of what the above mentioned tools are.
-
-3. **Update the published data** with QGIS and the WFS protocol we can update vector layers published on a remote host as it was hosted locally.
+3. **Layer update** with QGIS and the WFS protocol we can update vector layers published on a remote host as it was hosted locally.
 
 ## Layer creation
 ### Let's draw some vector data
 
 First of all we need QGIS so [download](http://www.qgis.org/en/site/) and install it.
-With postgis we can create any geometries like Points, Lines and Polygons as we can do with any other traditional vector desktop software like *Inkscape* or *corel Draw*.
+With QGIS we can create any geometries like `Points`, `Lines` and `Polygons` as we can do with any other traditional vector desktop software like *Inkscape* or *corel Draw* but the cool thing here is that if those geometries have a location on the earth (for example they are the shape of a country or a neighborhood) with QGIS we can automayically assign the coordinates to all the vertex.
 
-But the cool thing is that if those geometries have a location on the earth (for example they are the shape of a country or a neighborhood) with QGIS we can easily assign the coordinates to the vertex.
-
-Ok let's make the first geometry, it's quite easy to activate the QGIS drawing tools and start drawing a polygon but... 
+Ok let's make the first 1 minute quick-and-dirty  tutorial: it's quite easy to activate the QGIS drawing tools and start drawing a polygon but... 
 
 <img alt="Drawing a polygon with no background" src="https://raw.githubusercontent.com/f-ds/f-ds.github.io/master/public/img/make_data_no_bkg.png" width="50%">
 
 ...**Where** are we drawing it? How the spatial location of that geometry can be managed?
 
-well, now we can start to talk for hours about things like map projections and reference systems... but let's make the story short and start to build things! 
+well, now we can start to talk for hours about things like map projections and reference systems... but let's make the long story short and build something quick...
 
-In QGIS we can quickly install the OpenLayers plugin that allow us to import in the QGIS Layers one from the most famous maps services.
+In QGIS we can easilly install the OpenLayers plugin that allow us to set in the workbench a layer we use only as background:
 
-For example OpenStreetMap:
+Among the others we can use OpenStreetMap:
 
 <img alt="Drawing a polygon over Italy using OSM as background" src="https://raw.githubusercontent.com/f-ds/f-ds.github.io/master/public/img/make_data_osm_as_bkg.png" width="50%">
 
-So answering to the previous question: we are drawing a polygon over Italy!
+So answering to the previous question we are drawing a polygon over Italy!
 
-In the example below instead a polygon around the colosseum is drawn:
+In the example below a polygon around the colosseum is drawn:
 
 <img alt="Drawing a polygon over the colosseum" src="https://raw.githubusercontent.com/f-ds/f-ds.github.io/master/public/img/make_data_colosseum.png" width="50%">
 
-Ok, I hope this overview have clarified what are we going to do in this post...  let's continue with 2 minutes tutorial.
+Ok, I hope this introduction have clarified what are we going to do in this post...  let's continue with 5 minutes tutorial.
 
 Assuming that you have a recent QGIS release already installed and an internet connection:
 
