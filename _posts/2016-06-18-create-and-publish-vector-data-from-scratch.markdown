@@ -84,7 +84,7 @@ Assuming that you have a recent QGIS release already installed and an internet c
 
    and them **zoom-in** over the geographic feature you want to model (a country boundary, a river, a  street...)
 
-I decided to model the Reinassence Fortification Wall of my wonderful city **Lucca**
+   I decided to model the Reinassence Fortification Wall of my wonderful city **Lucca**
 
    <img title="CLICK TO OPEN !!! - Zoom in over Lucca" src="https://raw.githubusercontent.com/f-ds/f-ds.github.io/master/public/img/make_data_lucca.png" width="50%">
 
