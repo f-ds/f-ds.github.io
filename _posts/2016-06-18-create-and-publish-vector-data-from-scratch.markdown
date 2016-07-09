@@ -33,7 +33,14 @@ As just said before, we're going to break the process in 3 main steps:
 ### Let's draw some vector data
 
 First of all we need QGIS so [download](http://www.qgis.org/en/site/) and install it.
-With QGIS we can create any geometries like `Points`, `Lines` and `Polygons` as we can do with any other traditional vector desktop software like *Inkscape* or *corel Draw* but the cool thing here is that if those geometries have a location on the earth (for example they are the shape of a country or a neighborhood) with QGIS we can automayically assign the coordinates to all the vertex.
+
+With QGIS we can create any `Geometry` like 
+
+`Points`, `Lines` and `Polygons` 
+
+as we can do with any other traditional vector desktop software like *Inkscape* or *corel Draw*... but the cool QGIS thing is that if those geometries have a location on the earth (for example they are the shape of a country or a neighborhood) we can automayically assign the coordinates to all the vertexes.
+
+Since each `Geometry` represents a spatial **feature** we can also set a couple of `Attributes`.
 
 ### 1 minute quick-and-dirty  tutorial
 
@@ -61,7 +68,7 @@ In the example below a polygon around the colosseum is drawn:
 
 Assuming that you have a recent QGIS release already installed and an internet connection:
 
-1. Install the QGIS OpenLayers plugin
+1. **Install** the QGIS OpenLayers plugin:
 
    From the top menu select `Plugins` -> `Manage and Install Plugins...`
 
@@ -71,23 +78,29 @@ Assuming that you have a recent QGIS release already installed and an internet c
 
 2. The top menu `Web` is now available.
 
-   Load the OpenStreetmap layer to set a reference background to draw our features
+   Load the OpenStreetmap layer to set a QGIS workbench reference background to draw our features
 
    <img title="CLICK TO OPEN !!! - Activate the OpenLayers plugin" src="https://raw.githubusercontent.com/f-ds/f-ds.github.io/master/public/img/make_data_activate_openlayer.png" width="50%">
 
-   and them zoom-in over the geographic feature you want to model (a country boundary, a river, a  street...) I decided to zoom-in over my wonderful city **Lucca**
+   and them **zoom-in** over the geographic feature you want to model (a country boundary, a river, a  street...)
+
+I decided to model the Reinassence Fortification Walls of my wonderful city **Lucca**
 
    <img title="CLICK TO OPEN !!! - Zoom in over Lucca" src="https://raw.githubusercontent.com/f-ds/f-ds.github.io/master/public/img/make_data_lucca.png" width="50%">
 
-3. Create a new vector layer using a Shapefile 
+3. Create a new vector layer using a **Shapefile** format.
 
-   browsing the top menu select 
+   **HINT**: Read something about the ancient (Shapefile)[https://en.wikipedia.org/wiki/Shapefile] geospatial vector data format if you never heard about it.
+
+   from the top menu select:
 
    `Layer` -> `Create Layer` -> `New Shapefile Layer ...`
 
    <img title="CLICK TO OPEN !!! - Create new Shapefile layer" src="https://raw.githubusercontent.com/f-ds/f-ds.github.io/master/public/img/make_data_create_new_shapefilelayer.png" width="50%">
 
-   then press OK and type your output file name
+   then press OK and type your output file name.
+
+   Fill-in the information about the `Geometry Type` and `Attributes` (fields) in the following dialogue box as shown below:
 
    <img title="CLICK TO OPEN !!! - New layer dialogue box" src="https://raw.githubusercontent.com/f-ds/f-ds.github.io/master/public/img/make_data_new_layer_dialogue_mod.png" width="50%">
 
