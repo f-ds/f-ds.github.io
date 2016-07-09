@@ -32,7 +32,7 @@ As just said before, we're going to break the process in 3 main steps:
 ## Layer creation
 ### Let's draw some vector data
 
-First of all we need QGIS so [download](http://www.qgis.org/en/site/) and install it.
+First of all we need **QGIS** so [download](http://www.qgis.org/en/site/) and install it.
 
 With QGIS we can create any `Geometry` like 
 
