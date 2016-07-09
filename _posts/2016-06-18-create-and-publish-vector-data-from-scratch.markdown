@@ -98,9 +98,9 @@ Assuming that you have a recent QGIS release already installed and an internet c
 
    <img title="CLICK TO OPEN !!! - Create new Shapefile layer" src="https://raw.githubusercontent.com/f-ds/f-ds.github.io/master/public/img/make_data_create_new_shapefilelayer.png" width="50%">
 
-   then press OK and type your output file name.
-
    Fill-in the information about the `Geometry Type` and `Attributes` (aka fields) in the following dialogue box as shown below:
+
+   Then press OK and type your output file name and select the location. We choose the name `mura.shp`. Other files will be created with the same name but with different extensions, we will have a look on them at the end of the tutorial.
 
    <img title="CLICK TO OPEN !!! - New layer dialogue box" src="https://raw.githubusercontent.com/f-ds/f-ds.github.io/master/public/img/make_data_new_layer_dialogue_mod.png" width="50%">
 
@@ -130,10 +130,26 @@ Assuming that you have a recent QGIS release already installed and an internet c
 
    We have 4 core files representing the basic and mandatory Shapefile components. 
    
-   <img title>
+   <img title="CLICK TO OPEN !!! - Shapefile structure" src="https://raw.githubusercontent.com/f-ds/f-ds.github.io/master/public/img/make_data_shpstructure.png" width="20%">
 
-   Some programs creates also few more files, always with the samoe filename but different extension: those usually are further Indexes or other proprietary stuff.
+   * **.shp** shape format; the feature geometry itself
 
-# Build up the environment
+   * **.shx** shape index format; a positional index of the feature geometry to allow seeking forwards and backwards quickly
 
-# Publish your very first own layer!
+   * **.prj** projection format; the coordinate system and projection information, a plain text file describing the projection using well-known text (WKT) format
+
+   * **.dbf** attribute format; columnar attributes for each shape, in **dBase IV** format. 
+   
+   As you can see it is automatically associated to a spreadsheet. I suggest to change its content only with GIS tools like QGIS although sometimes use a stylesheet could be usefull. If you want to use a stylesheet be sure that the software you use supports the **dBase IV** database specifications.
+
+   Some programs creates also few more files, always with the same filename but different extension: those serve for advanced indexing or other vendor capabilities.
+
+## Final Summary
+
+In this post we learnt to create a custom vector geospatial dataset which can be used as a **layer** of geospatial **features** in any maps.
+
+The basics **tools** introduced have been **QGIS** and its **Openlayer plugin** plus the **Shapefile** format.
+
+In the next post we are going to see how to build up a production geospatial infrastructure to host our custom layer using some DevOps tools.
+
+
