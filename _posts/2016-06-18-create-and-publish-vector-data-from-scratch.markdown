@@ -7,7 +7,7 @@ This post shows how to *create* a **georeferenced vector dataset** from scratch 
 
 Basically it explain how to, in sequence
 
-* Draw georeferenced geometries called *features** over a map background taken from one of the most popular free map tiles services
+* Draw georeferenced geometries called **features** over a map background taken from one of the most popular free map tiles services
 * Build up a simple geospatial infrastructure from scratch
 * Use the WFS protocol to easilly keep the features updated
 
