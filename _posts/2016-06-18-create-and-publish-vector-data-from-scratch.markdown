@@ -117,6 +117,23 @@ Assuming that you have a recent QGIS release already installed and an internet c
 
    <img title="CLICK TO OPEN !!! - Add attributes" src="https://raw.githubusercontent.com/f-ds/f-ds.github.io/master/public/img/make_data_edit_attributes.png" width="20%">
 
+   Et voilà, le jeux sont fait! 
+
+   We have traced a geometry representing an architectionical **feature** of a city and we can easily incorporate it in any map we wanna create.
+
+   <img title="CLICK TO OPEN !!! - The final result" src="https://raw.githubusercontent.com/f-ds/f-ds.github.io/master/public/img/make_data_muradilucca.png" width="50%">
+
+   Don't forget to Save the progress deselecting the orange pencil button.
+
+   Then have a look on the file system how our vector dataset saved as a shapefile is stored
+
+
+   We have 4 core files representing the basic and mandatory Shapefile components. 
+   
+   <img title>
+
+   Some programs creates also few more files, always with the samoe filename but different extension: those usually are further Indexes or other proprietary stuff.
+
 # Build up the environment
 
 # Publish your very first own layer!
