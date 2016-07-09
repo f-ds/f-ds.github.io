@@ -1,6 +1,6 @@
 ---
 published: false
-title: Build up the server to make maps
+title: Build up a backend to make maps
 layout: post
 ---
 Ok this is the "nerdest" part of the whole process. If you are interested only in the data creation and management you can read only the next section and beg your your nerd best friend to read the rest of the sections and build the system for you.
