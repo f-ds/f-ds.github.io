@@ -17,7 +17,7 @@ Perhaps you are now wondering...
 * Why should I learn how to do it from scratch? 
 * Why should I have to deal with GIS software and Linux instead of simply use an online map maker?
 
-Well, try to bring out the best from mapbox and cartodb but if after that you still need more control over the overall map creation or simply you want to avoid fees... check this post out!
+Well, try to bring out the best from **Mapbox** and **CARTO** but if after that you still need more control over the overall map creation or simply you want to avoid fees... check this post out!
 
 ##The whole process in 3 steps
 
@@ -151,5 +151,3 @@ In this post we learnt to create a custom vector geospatial dataset which can be
 The basics **tools** introduced have been **QGIS** and its **Openlayer plugin** plus the **Shapefile** format.
 
 In the next post we are going to see how to build up a production geospatial infrastructure to host our custom layer using some DevOps tools.
-
-
