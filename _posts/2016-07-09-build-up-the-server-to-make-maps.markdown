@@ -11,11 +11,13 @@ If you are only focused on the creation and management of the data have a look o
 
 <img title="RIGHT CLICK TO OPEN !!! - System diagram" src="https://raw.githubusercontent.com/f-ds/f-ds.github.io/master/public/img/make_data_geobackend.png" width="70%">
 
-* Geoserver
+The 3 main components we are going to use are
 
-* PostGIS 
+* **Geoserver** allows users to share, process and edit geospatial data. Designed for interoperability, it publishes data from any major spatial data source using open standards. [website here](http://geoserver.org/)
 
-* GDAL
+* PostGIS is an open source software program that adds support for geographic objects to the PostgreSQL object-relational database. [website here](http://postgis.net/)
+
+* GDAL is a computer software library for reading and writing raster and vector geospatial data formats. [website here](http://www.gdal.org/)
 
 ## Buy a Virtual Machine
 
