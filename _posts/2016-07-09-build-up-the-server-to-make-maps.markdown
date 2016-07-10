@@ -15,9 +15,9 @@ The 3 main components we are going to use are
 
 * **Geoserver** allows users to share, process and edit geospatial data. Designed for interoperability, it publishes data from any major spatial data source using open standards. [website here](http://geoserver.org/)
 
-* PostGIS is an open source software program that adds support for geographic objects to the PostgreSQL object-relational database. [website here](http://postgis.net/)
+* **PostGIS** is an open source software program that adds support for geographic objects to the PostgreSQL object-relational database. [website here](http://postgis.net/)
 
-* GDAL is a computer software library for reading and writing raster and vector geospatial data formats. [website here](http://www.gdal.org/)
+* **GDAL** is a computer software library for reading and writing raster and vector geospatial data formats. [website here](http://www.gdal.org/)
 
 ## Buy a Virtual Machine
 
