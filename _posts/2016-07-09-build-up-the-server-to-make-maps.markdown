@@ -60,7 +60,9 @@ So we are not going to enter in the details of how to make Ansible Playbooks in 
 
 ## Use the Ansible GIS playbook
 
-All the instructions are reported on the [Readme.md](https://github.com/Damianofds/ansible-provisioning) file of the repo.
+OK, I'll be rude but all the instructions are reported on the [README.md](https://github.com/Damianofds/ansible-provisioning) file of the repo... so just read it!
+
+A couple of comments:
 
 First of all we have to [manually configure a control machine](https://github.com/Damianofds/ansible-provisioning#setting-up-the-control-machine) as described here. 
 
