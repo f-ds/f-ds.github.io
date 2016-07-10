@@ -9,7 +9,13 @@ If you are only focused on the creation and management of the data have a look o
 
 ## System overview
 
-PUT here an amazing Diagram! explaining what are Geoserver, PostGIS and GDAL
+
+
+* Geoserver
+
+* PostGIS 
+
+* GDAL
 
 ## Buy a Virtual Machine
 
