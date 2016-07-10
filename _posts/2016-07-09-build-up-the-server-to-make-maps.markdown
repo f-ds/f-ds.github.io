@@ -9,7 +9,7 @@ If you are only focused on the creation and management of the data have a look o
 
 ## System overview
 
-
+<img title="RIGHT CLICK TO OPEN !!! - System diagram" src="https://raw.githubusercontent.com/f-ds/f-ds.github.io/master/public/img/make_data_geobackend.png" width="50%">
 
 * Geoserver
 
