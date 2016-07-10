@@ -7,7 +7,9 @@ This is the most technical part of the whole process and we are going to use som
 
 If you are only focused on the creation and management of the data have a look only to the System Overview section and beg your your nerd best friend to read the rest of the post and do the nerd work for you.
 
-## System overview
+## Backend overview
+
+Here is a diagram of the backend we are going to make:
 
 <img title="RIGHT CLICK TO OPEN !!! - System diagram" src="https://raw.githubusercontent.com/f-ds/f-ds.github.io/master/public/img/make_data_geobackend.png" width="70%">
 
