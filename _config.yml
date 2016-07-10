@@ -4,5 +4,5 @@ markdown: kramdown
 url: http://f-ds.github.io
 title: f-ds
 tagline: fds dev blog
-description: Everyday GIS stuff and Backend programming for food
-paginate: 5
+description: daily coding and GIS stuff for food
+paginate: 20
